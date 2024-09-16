@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>myBlog</title>
+</head>
+<body>
+
+    <div  class='container'>
+
+    <h1>Hey tweet something</h1>
+    <div class="form">
+    <form action="/post" method="post">
+        <input type="text" name="tweet" value="" placeholder="" class="text">
+        <input type="submit" class="button" >
+    </form>
+    </div>
+
+    <!-- <div class="current">
+        <%if(locals.myTweet){%>
+            <p>
+               You tweeted '<%= myTweet %>'
+               </p>
+       <% } else{%>
+         <p>You haven't tweeted yet</p>
+       <%}%>
+    </div> -->
+    <div class="main">
+        <% myStore.forEach(tweet => { %>
+            <div class="tweet">
+                <!-- <p><%= tweet.id + 1 %> <%= tweet.text %></p> -->
+                <form action="/edit" method="post" style="display:inline;">
+                    <input type="hidden" name="id" value="<%= tweet.id %>">
+                    <input type="text" name="text" class="edit-input" value="<%= tweet.text %>" placeholder="Edit tweet" required>
+                    <input type="submit" class="edit-button" value="Edit">
+                </form>
+                <form action="/delete" method="post" style="display:inline;">
+                    <input type="hidden" name="id" value="<%= tweet.id %>">
+                    <input type="submit" value="Delete" class="edit-button">
+                </form>
+            </div>
+        <% }) %>  
+    </div>
+</div>
+   
+    
+</body>
+</html>

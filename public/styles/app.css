@@ -1,0 +1,69 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+.container {
+  margin-top: 100px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* body{
+    background-color: #000000;
+    color: white;
+  } */
+body {
+  background-color: #b0c4b1;
+}
+.button {
+  border-radius: 2px;
+  border: none;
+  padding: 7px 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #a3b18a;
+  height: 43px;
+  width: 100px;
+}
+.text {
+  padding: 5px;
+  /* border: none; */
+  outline: none;
+  /* border-radius: 2px; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 400px;
+  height: 30px;
+  font-size: 20px;
+}
+/* .current {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+} */
+.main {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.edit-input {
+  height: 30px;
+  width: 300px;
+  margin-bottom: 3px;
+}
+.edit-button {
+  height: 35px;
+  width: 70px;
+  background-color: #a3b18a;
+  border: none;
+}
+/* .edit-button:hover {
+  background-color: #b0c4b1;
+} */
