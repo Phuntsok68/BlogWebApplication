@@ -3,9 +3,11 @@ This app is a simple tweet management system built with Express.js. It allows us
 -------Shared Tweets------
 <br> <br>
 ![viewTweet](viewTweet.jpg)
+<br> <br>
 -------Edited Tweets------
 <br> <br>
 ![editTweet](editTweet.jpg)
+<br> <br>
 -------Deleted Tweets------
 <br> <br>
 ![deleteTweet](deleteTweet.jpg)
