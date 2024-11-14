@@ -67,3 +67,38 @@ body {
 /* .edit-button:hover {
   background-color: #b0c4b1;
 } */
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.img-container {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+.add-form {
+  text-align: center;
+}
+.search-form {
+  text-align: center;
+}
+input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  padding: 5px;
+}
